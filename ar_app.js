@@ -268,23 +268,23 @@ function init() {
                     marker2.add(RhinoMesh2);
                 }, onProgress, onError);
         });
-        // new THREE.MTLLoader()
-        // .setPath('data/models/')
-        // .load('aun.mtl', function (materials) {
-        //     materials.preload();
-        //     new THREE.OBJLoader()
-        //         .setMaterials(materials)
-        //         .setPath('data/models/')
-        //         .load('aun.obj', function (group) {
-        //             RhinoMesh11 = group.children[0];
-        //             RhinoMesh11.material.side = THREE.DoubleSide;
-        //             RhinoMesh11.scale.set(0.25, 0.25, 0.25);
-        //             RhinoMesh11.castShadow = true;
-        //             RhinoMesh11.receiveShadow = true;
+        new THREE.MTLLoader()
+        .setPath('data/models/')
+        .load('aun.mtl', function (materials) {
+            materials.preload();
+            new THREE.OBJLoader()
+                .setMaterials(materials)
+                .setPath('data/models/')
+                .load('aun.obj', function (group) {
+                    RhinoMesh11 = group.children[0];
+                    RhinoMesh11.material.side = THREE.DoubleSide;
+                    RhinoMesh11.scale.set(0.07, 0.07, 0.07);
+                    RhinoMesh11.castShadow = true;
+                    RhinoMesh11.receiveShadow = true;
 
-        //             marker11.add(RhinoMesh11);
-        //         }, onProgress, onError);
-        // });
+                    marker11.add(RhinoMesh11);
+                }, onProgress, onError);
+        });
     
     
      ////OBJETO RHINO 3///////////////
@@ -305,12 +305,12 @@ function init() {
      });
      new THREE.MTLLoader()
         .setPath('data/models/')
-        .load('kit.mtl', function (materials) {
+        .load('bolsa2.mtl', function (materials) {
             materials.preload();
             new THREE.OBJLoader()
                 .setMaterials(materials)
                 .setPath('data/models/')
-                .load('kit.obj', function (group) {
+                .load('bolsa2.obj', function (group) {
                     RhinoMesh5 = group.children[0];
                     RhinoMesh5.material.side = THREE.DoubleSide;
                     RhinoMesh5.scale.set(0.25, 0.25, 0.25);
@@ -348,7 +348,7 @@ function init() {
                 .load('grafico.obj', function (group) {
                     RhinoMesh8 = group.children[0];
                     RhinoMesh8.material.side = THREE.DoubleSide;
-                    RhinoMesh8.scale.set(0.25, 0.25, 0.25);
+                    RhinoMesh8.scale.set(0.1, 0.1, 0.1);
                     RhinoMesh8.castShadow = true;
                     RhinoMesh8.receiveShadow = true;
 
