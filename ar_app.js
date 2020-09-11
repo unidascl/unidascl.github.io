@@ -313,7 +313,7 @@ function init() {
                 .load('bolsa2.obj', function (group) {
                     RhinoMesh5 = group.children[0];
                     RhinoMesh5.material.side = THREE.DoubleSide;
-                    RhinoMesh5.scale.set(0.25, 0.25, 0.25);
+                    RhinoMesh5.scale.set(0.05, 0.05, 0.05);
                     RhinoMesh5.castShadow = true;
                     RhinoMesh5.receiveShadow = true;
 
@@ -365,7 +365,7 @@ function init() {
                 .load('pulsera2.obj', function (group) {
                     RhinoMesh9 = group.children[0];
                     RhinoMesh9.material.side = THREE.DoubleSide;
-                    RhinoMesh9.scale.set(0.25, 0.25, 0.25);
+                    RhinoMesh9.scale.set(0.05, 0.05, 0.05);
                     RhinoMesh9.castShadow = true;
                     RhinoMesh9.receiveShadow = true;
 
